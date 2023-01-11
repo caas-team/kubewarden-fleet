@@ -36,4 +36,4 @@ policyServer:
       verbs:
         - update
 recommendedPolicies:
-  enabled: false
+  enabled: true
