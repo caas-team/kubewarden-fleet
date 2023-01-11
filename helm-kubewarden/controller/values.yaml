@@ -2,3 +2,7 @@
 common:
   cattle:
     systemDefaultRegistry: mtr.devops.telekom.de
+
+-image:
+-  repository: "kubewarden/kubewarden-controller"
+-  tag: "v1.4.0"
