@@ -1,0 +1,14 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: kubewarden
+  namespace: fleet-default
+spec:
+  repo: https://github.com/caas-team/kubewarden-fleet
+  branch: main
+  paths:
+  - helm-kubewarden/
+  targets:
+  - clusterSelector:
+      matchLabels:
+        kubewarden.install.me: "true"
