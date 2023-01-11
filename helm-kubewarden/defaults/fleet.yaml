@@ -6,6 +6,6 @@ helm:
   repo: https://mcsps-charts.obs-website.eu-de.otc.t-systems.com/charts
   version: 1.3.0
   valuesFiles:
-    values.yaml
+  - values.yaml
 dependsOn:
   - name: kubewarden-helm-kubewarden-controller
