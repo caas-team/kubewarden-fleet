@@ -2,6 +2,10 @@
 common:
   cattle:
     systemDefaultRegistry: mtr.devops.telekom.de
+  policyServer:
+    default:
+      name: default
+      enabled: true
 
 image:
   repository: "kubewarden/kubewarden-controller"
