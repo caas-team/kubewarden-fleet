@@ -1,0 +1,6 @@
+---
+# enable recommended policies and set them as monitor
+recommendedPolicies:
+  enabled: True
+  skipAdditionalNamespaces: []
+  defaultPolicyMode: "monitor"
