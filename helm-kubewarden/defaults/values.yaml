@@ -10,5 +10,30 @@ policyServer:
   env:
     - name: KUBEWARDEN_LOG_LEVEL
       value: info
+  serviceAccountName: policy-server
+  permissions:
+    - apiGroup: ""
+      resources:
+        - namespaces
+        - pods
+        - secrets
+        - services
+    - apiGroup: "networking.k8s.io"
+      resources:
+        - ingresses
+    - apiGroup: "policies.kubewarden.io"
+      resources:
+        - clusteradmissionpolicies
+        - admissionpolicies
+        - policyservers
+      verbs:
+        - get
+        - list
+        - watch
+    - apiGroup: "policies.kubewarden.io"
+      resources:
+        - policyservers/status
+      verbs:
+        - update
 recommendedPolicies:
   enabled: false
