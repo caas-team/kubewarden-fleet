@@ -2,28 +2,3 @@
 common:
   cattle:
     systemDefaultRegistry: mtr.devops.telekom.de
-  policyServer:
-    default:
-      name: default
-      enabled: true
-image:
-  repository: "kubewarden/kubewarden-controller"
-  tag: "v1.4.0"
-
-preDeleteJob:
-  image:
-    repository: "mcsps/kubectl"
-    tag: "latest"
-
-tls:
-  source: cert-manager-self-signed
-  certManagerIssuerName: ""
-
-resources:
-  controller:
-    limits:
-      cpu: 750m
-      memory: 500Mi
-    requests:
-      cpu: 250m
-      memory: 50Mi
