@@ -5,7 +5,7 @@ helm:
   chart: kubewarden-defaults
   repo: https://mcsps-charts.obs-website.eu-de.otc.t-systems.com/charts
   version: 1.4.0
-  valuesFiles:
-  - values.yaml
+  # valuesFiles:
+  # - values.yaml
 dependsOn:
   - name: kubewarden-helm-kubewarden-controller
