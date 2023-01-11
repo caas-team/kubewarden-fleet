@@ -7,3 +7,10 @@ policyServer:
   image:
     repository: "kubewarden/kubewarden-policy-server"
     tag: "v1.4.0"
+  serviceAccountName: policy-server
+  env:
+    - name: KUBEWARDEN_LOG_LEVEL
+      value: info
+crdVersion: "policies.kubewarden.io/v1"
+recommendedPolicies:
+  enabled: false
