@@ -37,4 +37,4 @@ policyServer:
       value: info
 crdVersion: "policies.kubewarden.io/v1"
 recommendedPolicies:
-  enabled: False
+  enabled: false

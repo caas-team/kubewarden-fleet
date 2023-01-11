@@ -1,3 +1,4 @@
+---
 defaultNamespace: kubewarden
 helm:
   releaseName: kubewarden-crds
