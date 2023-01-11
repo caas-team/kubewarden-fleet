@@ -6,7 +6,7 @@ metadata:
   namespace: fleet-default
 spec:
   repo: https://github.com/caas-team/kubewarden-fleet
-  branch: main
+  branch: checkpolicy
   paths:
     - helm-kubewarden/
   targets:

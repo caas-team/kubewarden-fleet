@@ -35,6 +35,5 @@ policyServer:
   env:
     - name: KUBEWARDEN_LOG_LEVEL
       value: info
-crdVersion: "policies.kubewarden.io/v1"
 recommendedPolicies:
   enabled: false
